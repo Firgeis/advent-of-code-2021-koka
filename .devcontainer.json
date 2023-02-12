@@ -1,0 +1,11 @@
+{
+  "image": "gcc:12.2.0-bullseye",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "koka.language-koka"
+      ]
+    }
+  },
+  "postCreateCommand": "apt update && curl -sSL https://github.com/koka-lang/koka/releases/latest/download/install.sh | sh"
+}
