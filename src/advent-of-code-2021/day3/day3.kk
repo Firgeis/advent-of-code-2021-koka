@@ -60,6 +60,6 @@ fun string-to-int(str: string, base: int)
   var value := 0
   str.foreach( fn(c) {
     if !c.is-digit then throw("Tried to parse non digit")
-    value := value * 2 + (c - '0').int
+    value := value * base + (c - '0').int
   })
   value
